@@ -1,5 +1,5 @@
 class wpcli {
-  exec { 'download-wpcli:
+  exec { 'download-wpcli':
     path    => '/bin:/usr/bin',
     command => 'wget https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar'
     cwd     => '/usr/bin',
@@ -18,8 +18,8 @@ class wpcli {
 
   file { '/usr/bin/wp':
     ensure  => 'link',
-    owner   => $owner,
-    group   => $group,
+    owner   => 'root',
+    group   => 'root',
     target  => '/usr/bin/wp-cli.phar',
     require => File['/usr/bin/wp-cli.phar'],
   }

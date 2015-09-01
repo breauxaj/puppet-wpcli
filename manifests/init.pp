@@ -1,7 +1,7 @@
 class wpcli {
   exec { 'download-wpcli':
     path    => '/bin:/usr/bin',
-    command => 'wget https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar'
+    command => 'wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar'
     cwd     => '/usr/bin',
     creates => '/usr/bin/wp-cli.phar',
     timeout => 10000,

@@ -23,7 +23,7 @@
 #  To specify an alternate download link, use:
 #
 #    class { 'wpcli':
-#      source => 'http://alternate.domain.tld/get/phing-latest.phar'
+#      source => 'http://alternate.domain.tld/wp-cli.phar'
 #    }
 #
 class wpcli (

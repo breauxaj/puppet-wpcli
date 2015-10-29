@@ -12,6 +12,11 @@ Samples
 ```
 include wpcli
 ```
+```
+class { 'wpcli':
+  source => 'https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar'
+}
+```
 
 License
 -------
